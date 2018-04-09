@@ -1,5 +1,5 @@
 ### To get started ###
-Make sure to have postgres installed. You can install at [here](https://postgresapp.com/)
+Make sure to have postgres installed. You can install at [here](https://postgresapp.com/) and have the app running.
 
 Make sure to Bundle Install
 ```
