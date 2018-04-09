@@ -1,5 +1,8 @@
 ### GEMS ###
-- devise
+- devise (for users)
+- awesome_print (for pretty irb / pry)
+- rails-jquery (for bootstrap)
+- gem 'bootstrap-sass', '~> 3.3.7' (for bootstrap)
 
 ### Models ###
 - User (default devise settings)
