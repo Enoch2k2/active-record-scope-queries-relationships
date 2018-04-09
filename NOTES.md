@@ -1,12 +1,19 @@
+-- users
+-- users have carts
+-- carts
+-- carts have items
+-- items
+
 ### GEMS ###
 - devise (for users)
 - awesome_print (for pretty irb / pry)
 - rails-jquery (for bootstrap)
 - gem 'bootstrap-sass', '~> 3.3.7' (for bootstrap)
 
+
 ### Models ###
 - User (default devise settings)
-  - current_cart_id # every belongs_to association will have the user_id foreign key
+  - current_cart_id # every belongs_to association will have the current_cart_id foreign key
 - Cart
   - user_id:int # every belongs_to association will have the user_id foreign key
   - status:string default: "open"

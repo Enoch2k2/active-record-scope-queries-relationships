@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :cart_items
+  resources :items
+  resources :carts
   devise_for :users
   root to: 'welcome#home'
 
