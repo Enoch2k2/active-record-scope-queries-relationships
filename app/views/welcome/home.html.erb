@@ -1,0 +1,27 @@
+<h1>Item List</h1>
+<%= form_tag root_path, class: "form-inline" do %>
+  <div class="form-group">
+    <%= text_field_tag :search, "", class: "form-control" %>
+  </div>
+  <input type="submit" value="Search" class="btn btn-default">
+<% end %>
+<table class="table table-hover">
+  <thead>
+    <th>Item Name</th>
+    <th>Item Price</th>
+    <th>Item Type</th>
+    <th>Item Stock</th>
+    <% if user_signed_in? %>
+      <th>Buy</th>
+    <% end %>
+  </thead>
+  <tbody>
+    <td>Foldgers (Dark Roast)</td>
+    <td>$6.99</td>
+    <td>Coffee</td>
+    <td>12</td>
+    <% if user_signed_in? %>
+      <td><%= link_to "Buy", "#" %></td>
+    <% end %>
+  </tbody>
+</table>
